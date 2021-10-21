@@ -12,4 +12,11 @@
     <string name="distSt">Distance in miles feet</string>
     <string name="cMM">Selected: Nautical Miles</string>
     <string name="cML">Selected: Land miles</string>
+    <string name="rbMilaM">Nautical mile</string>
+    <string name="rbMilaL">Land mile</string>
+    <string name="rbJard">Yard</string>
+    <string name="rbStopa">Foot</string>
+    <string name="rbCal">Inch</string>
+    <string name="btnOdl">Distance</string>
+    <string name="textView3">Choose a measure:</string>
 </resources>

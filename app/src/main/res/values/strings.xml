@@ -11,4 +11,11 @@
     <string name="cCa">"Wybrano: Cale"</string>
     <string name="cJa">"Wybrano: Jardy"</string>
     <string name="cSt">"Wybrano: Stopy"</string>
+    <string name="rbMilaM">Mila morska</string>
+    <string name="rbMilaL">Mile lądowa</string>
+    <string name="rbJard">Jard</string>
+    <string name="rbStopa">Stopa</string>
+    <string name="rbCal">Cal</string>
+    <string name="btnOdl">Wyznacz odległość</string>
+    <string name="textView3">Wybierz miarę:</string>
 </resources>

@@ -20,7 +20,7 @@
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Podaj odłegłość [m]" />
+            android:text="@string/app_name" />
 
         <EditText
             android:id="@+id/etMetry"
@@ -33,7 +33,7 @@
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Wybierz miarę:" />
+            android:text="@string/textView3" />
 
         <RadioGroup
             android:id="@+id/rGroup"
@@ -44,38 +44,38 @@
                 android:id="@+id/rbMilaM"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Mila morska" />
+                android:text="@string/rbMilaM" />
 
             <RadioButton
                 android:id="@+id/rbMilaL"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Mila lądowa" />
+                android:text="@string/rbMilaL" />
 
             <RadioButton
                 android:id="@+id/rbJard"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Jard" />
+                android:text="@string/rbJard" />
 
             <RadioButton
                 android:id="@+id/rbStopa"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Stopa" />
+                android:text="@string/rbStopa" />
 
             <RadioButton
                 android:id="@+id/rbCal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Cal" />
+                android:text="@string/rbCal" />
         </RadioGroup>
 
         <Button
             android:id="@+id/btnOdl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Wyznacz odległość" />
+            android:text="@string/btnOdl" />
 
         <TextView
             android:id="@+id/tvWynik"
