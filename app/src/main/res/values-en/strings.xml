@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Distance Calculator</string>
+    <string name="cSt">" Selected: Feet"</string>
+    <string name="cJa">" Selected: Jard"</string>
+    <string name="cCa">" Selected: Feet"</string>
+    <string name="toastMessLackM">"Enter meters to convert "</string>
+    <string name="distMM">Distance in nautical miles</string>
+    <string name="distML">Distance in land miles</string>
+    <string name="distCa">Distance in miles inches</string>
+    <string name="distJa">Distance in miles yards</string>
+    <string name="distSt">Distance in miles feet</string>
+    <string name="cMM">Selected: Nautical Miles</string>
+    <string name="cML">Selected: Land miles</string>
+</resources>
