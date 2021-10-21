@@ -27,6 +27,12 @@ public class MainActivity extends AppCompatActivity {
     @BindString(string.toastMessLackM)
     String toastMessLackM;
     @SuppressLint("NonConstantResourceId")
+    @BindString(string.toastNumber)
+    String toastNumber;
+    @SuppressLint("NonConstantResourceId")
+    @BindString(string.toastLackSelectedUnit)
+    String toastLackSelectedUnit;
+    @SuppressLint("NonConstantResourceId")
     @BindString(string.distMM)
     String distMM;
     @SuppressLint("NonConstantResourceId")
@@ -84,10 +90,10 @@ public class MainActivity extends AppCompatActivity {
         RadioGroup radioGroup = findViewById(id.rGroup);
         RadioButton mileM = findViewById(id.rbMilaM);
         RadioButton mileL = findViewById(id.rbMilaL);
-        RadioButton jardy = findViewById(id.rbJard);
+        RadioButton yard = findViewById(id.rbJard);
         RadioButton cale = findViewById(id.rbCal);
 
-        TextView wynik = findViewById(id.tvWynik);
+        TextView result = findViewById(id.tvWynik);
         Button button = findViewById(id.btnOdl);
         EditText dist = findViewById(id.etMetry);
 
@@ -108,15 +114,15 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(v -> {
             if (dist.getText().toString().equals("")) {
                 Toast.makeText(getApplicationContext(), toastMessLackM, Toast.LENGTH_SHORT).show();
-                wynik.setText("");
+                result.setText("");
             } else if (!isNumeric(dist.getText().toString())) {
-                Toast.makeText(getApplicationContext(), "Wprowadź ilość metrów", Toast.LENGTH_SHORT).show();
-                wynik.setText("");
+                Toast.makeText(getApplicationContext(), toastNumber, Toast.LENGTH_SHORT).show();
+                result.setText("");
             } else {
                 int selectedId = radioGroup.getCheckedRadioButtonId();
                 if (selectedId == -1) {
-                    Toast.makeText(getApplicationContext(), "Wybierz jednostkę do przeliczenia", Toast.LENGTH_SHORT).show();
-                    wynik.setText("");
+                    Toast.makeText(getApplicationContext(), toastLackSelectedUnit, Toast.LENGTH_SHORT).show();
+                    result.setText("");
                 } else {
                     final double ds = Double.parseDouble(dist.getText().toString());
                     DecimalFormat df = new DecimalFormat();
@@ -124,19 +130,19 @@ public class MainActivity extends AppCompatActivity {
                     df.setMinimumFractionDigits(0);
                     if (selectedId == mileM.getId()) {
                         MileMorskie mm = new MileMorskie(ds);
-                        wynik.setText(String.format("%s: %s", distMM, df.format(mm.policzOdl())));
+                        result.setText(String.format("%s: %s", distMM, df.format(mm.policzOdl())));
                     } else if (selectedId == mileL.getId()) {
                         MilaLad ml = new MilaLad(ds);
-                        wynik.setText(String.format("%s: %s", distML, df.format(ml.policzOdl())));
+                        result.setText(String.format("%s: %s", distML, df.format(ml.policzOdl())));
                     } else if (selectedId == cale.getId()) {
                         Cal cl = new Cal(ds);
-                        wynik.setText(String.format("%s: %s", distCa, df.format(cl.policzOdl())));
-                    } else if (selectedId == jardy.getId()) {
+                        result.setText(String.format("%s: %s", distCa, df.format(cl.policzOdl())));
+                    } else if (selectedId == yard.getId()) {
                         Jard ya = new Jard(ds);
-                        wynik.setText(String.format("%s: %s", distJa, df.format(ya.policzOdl())));
+                        result.setText(String.format("%s: %s", distJa, df.format(ya.policzOdl())));
                     } else {
                         Stopa st = new Stopa(ds);
-                        wynik.setText(String.format("%s: %s", distSt, df.format(st.policzOdl())));
+                        result.setText(String.format("%s: %s", distSt, df.format(st.policzOdl())));
                     }
                 }
             }

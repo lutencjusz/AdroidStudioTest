@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Kalkulator Odleglości</string>
     <string name="toastMessLackM">Podaj metry do przeliczenia</string>
+    <string name="toastNumber">Wprowadź wielkość w metrach</string>
+    <string name="toastLackSelectedUnit">Wybierz jednostkę do przeliczenia</string>
     <string name="distMM">"Odległość w milach morskich"</string>
     <string name="distML">"Odległość w milach lądowych"</string>
     <string name="distCa">"Odległość w milach calach"</string>

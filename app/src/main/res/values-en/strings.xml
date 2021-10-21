@@ -19,4 +19,6 @@
     <string name="rbCal">Inch</string>
     <string name="btnOdl">Distance</string>
     <string name="textView3">Choose a measure:</string>
+    <string name="toastNumber">Enter the size in meters</string>
+    <string name="toastLackSelectedUnit">Select the unit to be converted</string>
 </resources>
