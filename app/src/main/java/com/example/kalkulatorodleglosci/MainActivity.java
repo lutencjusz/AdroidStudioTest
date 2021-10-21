@@ -14,10 +14,8 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import java.text.DecimalFormat;
 import java.util.Locale;
-
 import butterknife.BindString;
 import butterknife.ButterKnife;
 
