@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">KalkulatorOdleglosci</string>
+    <string name="toastMessLackM">Podaj metry do przeliczenia</string>
+    <string name="distMM">"Odległość w milach morskich"</string>
+    <string name="distML">"Odległość w milach lądowych"</string>
+    <string name="distCa">"Odległość w milach calach"</string>
+    <string name="distJa">"Odległość w milach jardach"</string>
+    <string name="distSt">"Odległość w milach stopach"</string>
+    <string name="cMM">"Wybrano: Mile morskie"</string>
+    <string name="cML">"Wybrano: Mile lądową"</string>
+    <string name="cCa">"Wybrano: Cale"</string>
+    <string name="cJa">"Wybrano: Jardy"</string>
+    <string name="cSt">"Wybrano: Stopy"</string>
+</resources>
